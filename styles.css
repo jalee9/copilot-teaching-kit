@@ -1,0 +1,101 @@
+/* Set global styles for the body element */
+body {
+    font-family: Arial, sans-serif; /* Use Arial font with sans-serif fallback */
+    line-height: 1.6; /* Set line height for better readability */
+    margin: 20px; /* Add margin around the body */
+}
+/* Add styles for the header element */
+header {
+    background-color: #f4f4f4; /* Light gray background for the header */
+    padding: 20px; /* Add padding inside the header */
+    text-align: center; /* Center-align the header content */
+    border-bottom: 2px solid #ddd; /* Add a bottom border */
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #333; /* Dark background for the navigation bar */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Add padding inside the navigation bar */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out items evenly */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+    color: #fff; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Add horizontal spacing between links */
+    font-size: 16px; /* Set font size for links */
+}
+
+/* Add hover effect for navigation links */
+nav a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Style the menu container inside the navigation bar */
+nav .menu {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 10px; /* Add spacing between menu items */
+}
+
+/* Responsive styles for navigation bar */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    nav .menu {
+        flex-direction: column; /* Stack menu items vertically */
+        width: 100%; /* Take full width */
+    }
+
+    nav a {
+        margin: 5px 0; /* Add vertical spacing between links */
+    }
+}
+
+/* Style the main heading */
+h1 {
+    text-align: center; /* Center-align the heading */
+}
+
+/* Add spacing between sections */
+.section {
+    margin-bottom: 20px; /* Add bottom margin to sections */
+}
+
+/* Style collapsible buttons */
+.collapsible {
+    background-color: #f1f1f1; /* Light gray background for collapsible buttons */
+    color: #333; /* Dark text color */
+    cursor: pointer; /* Change cursor to pointer */
+    padding: 10px; /* Add padding inside the button */
+    width: 100%; /* Make button take full width */
+    border: none; /* Remove border */
+    text-align: left; /* Align text to the left */
+    outline: none; /* Remove outline */
+    font-size: 18px; /* Set font size */
+}
+
+/* Style the collapsible content */
+.content {
+    padding: 0 15px; /* Add horizontal padding */
+    display: none; /* Hide content by default */
+    overflow: hidden; /* Prevent overflow */
+    background-color: #fafafa; /* Light background for content */
+    border-left: 3px solid #ccc; /* Add left border */
+}
+/* Style the footer element */
+footer {
+    background-color: #f4f4f4; /* Light gray background for the footer */
+    text-align: center; /* Center-align the footer content */
+    padding: 20px; /* Add padding inside the footer */
+    border-top: 2px solid #ddd; /* Add a top border */
+    margin-top: 20px; /* Add top margin to separate from content */
+}
