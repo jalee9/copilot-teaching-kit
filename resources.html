@@ -53,7 +53,7 @@
     </div>
 
     <!-- Section for Student Reflection Prompts -->
-    <div class="section"></div>
+    <div class="section">
         <button class="collapsible">💬 Student Reflection Prompts</button>
         <div class="content">
             <!-- Explanation of how to use prompts -->
@@ -107,7 +107,7 @@
     </div>
 
     <!-- Section for Scaffolding and Reflection -->
-    <div class="section"></div>
+    <div class="section">
         <button class="collapsible">🧭 Scaffolding, Reflection, and Open Discussion with GitHub Copilot</button>
         <div class="content">
             <!-- Overview of scaffolding strategies -->
@@ -133,5 +133,28 @@
     <footer>
         <p>&copy; 2025 Jennifer Lee | Wake Technical Community College | Teaching with Copilot</p>
     </footer>
+
+    <script>
+        // Select all collapsible buttons
+        const collapsibles = document.querySelectorAll(".collapsible");
+
+        // Add click event listener to each button
+        collapsibles.forEach(button => {
+            button.addEventListener("click", function () {
+                // Toggle the active class on the button
+                this.classList.toggle("active");
+
+                // Get the next sibling element (the content div)
+                const content = this.nextElementSibling;
+
+                // Toggle the display of the content
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        });
+    </script>
 </body>
 </html>
